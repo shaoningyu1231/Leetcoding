@@ -1,3 +1,8 @@
+"""
+自动补全，输入是个前缀字符串，另一个输入是个一堆单词。
+
+所以思路就非常简单，用个trie就行。用前缀找到子树，然后DFS一遍把所有的单词输出即可。
+"""
 class TrieNode:
     # we will build a prefix tree and use * to track the word
     def __init__(self):
